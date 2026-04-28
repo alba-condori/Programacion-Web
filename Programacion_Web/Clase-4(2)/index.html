@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Pasteleria</title>
+</head>
+<body class="estiloBody">
+    <header class="estiloHeader">
+        <img class="imgHeader" src="/Clase-4(tarea)/Imagenes/9480c5f8e457e5099ebd97b769f73871.png" 
+        alt="torta_azul">
+        <section class="estiloHeaderTitulo">
+            <h1>𝜗ৎ Pasteleria</h1>
+            <p> ᥫ Inicie su pedido online</p>
+        </section>
+    
+    </header>
+
+    <main class="estiloPagina">
+        <!--Nos sirve para enviar datos-->
+        <form class="estiloForm">
+            <section>
+                <h2>Datos de Clientes</h2>
+
+                <label for="nombre">Nombre</label>
+                <!--El type nos indica lo que podemos ingresar en el input-->
+                <input type="text" id="nombre" name="nombre" required/>
+                
+                <label for="tel">Telefono</label>
+                <input type="number" id="tel" name="tel" required/>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required/>
+                
+                <label for="dir">Direccion</label>
+                <input type="text" name="dir" id="dir" required/>
+
+            </section>
+
+            <section>
+                <h2>Tortas</h2>
+
+                <label for="chocotorta">Chocotorta</label>
+                <input type="checkbox" id="chocotorta" name="chocotorta" value="chocotorta">
+                
+                <label for="cheesecake">Cheesecake</label>
+                <input type="checkbox" id="cheesecake" name="cheesecake" value="cheesecake">
+                <select name="cheesecake" id="cheesecake">
+                    <option value="frutos_rojos">Frutos Rojos</option>
+                    <option value="maracuya">Maracuya</option>
+                    <option value="limon">Limon</option>
+                </select>
+
+                <label for="torta_nora">Torta Nora</label>
+                <input type="checkbox" id="torta_nora" name="torta_nora" value="torta_nora">
+
+            </section>
+
+            <section>
+                <h2>Tamaño</h2>
+
+                <input type="radio" id="chica" name="tamaño" value="chica" />
+                <label for="chica">Chica</label>
+
+                <input type="radio" id="grande" name="tamaño" value="grande" />
+                <label for="grande">Grande</label>
+
+                <input type="radio" id="mediana" name="tamaño" value="mediana" />
+                <label for="media">Mediana</label>
+
+            </section>
+            
+            <section>
+                <h3>Cantidad de porciones:</h3>
+                <input type="number">
+            </section>
+            
+            <section>
+                <h2>Especificaciones .ᐟ</h2>
+                <textarea name="comentarios" id="comentarios" rows="5"></textarea>
+
+            </section>
+
+            <!--SIEMPRE que haya un formulario vamos a tener un boton type submit-->
+            <button type="submit">Enviar pedido</button>
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.estiloBody{
+    background-color: rgb(55, 89, 119);
+}
+
+.estiloHeader{
+    display: flex;
+    background-color: rgb(55, 89, 119);
+
+}
+
+.estiloHeaderTitulo{
+    justify-content: space-around;
+    margin: 10px;
+    color: white;
+    font-style: italic;
+    
+}
+
+.estiloPagina{
+    background-color: rgb(108, 146, 179);
+    
+}
+
+.imgHeader{
+    width: auto;
+    height: 100px;
+    /*gap: 10px;
+    padding-top: 10px;*/
+    margin: 15px;
+}
+
+.estiloForm{
+    margin: 15px;
+    color: rgb(44, 70, 94);
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
