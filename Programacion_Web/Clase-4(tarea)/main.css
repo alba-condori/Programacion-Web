@@ -1,39 +1,35 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-.estiloHeader{
-    display: flex;
-    background-color: #442D1C;
-    padding-top: 5px;
-    padding-bottom: 15px;
-
+.estiloHeader {
+  display: flex;
+  background-color: #442d1c;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
-.estiloMain{
-    background-color: #84592B;
-
-    
+.estiloMain {
+  background-color: #84592b;
 }
 
-.estiloTitulo{
-    justify-content: space-around;
-    margin: 10px;
-    color: white;
-    font-style: italic;
-    
+.estiloTitulo {
+  justify-content: space-around;
+  margin: 10px;
+  color: white;
+  font-style: italic;
 }
 
-.estiloForm{
-    margin: 10px;
-    color: #442D1C;
-    padding-top: 5px;
-    padding-bottom: 15px;
+.estiloForm {
+  margin: 10px;
+  color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
-.estiloImg{
-    width: auto;
-    height: 100px;
-    margin: 10px;
-    padding-top: 15px;
+.estiloImg {
+  width: auto;
+  height: 100px;
+  margin: 10px;
+  padding-top: 15px;
 }

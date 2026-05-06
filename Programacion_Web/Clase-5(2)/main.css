@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff; /*color del texto del cuerpo*/
+  background-color: #f0f0f0; /*color del fondo de todo lo que esta en el cuerpo*/
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/*header { 
+  background-color: #ffffff;
+  color: white;
+  padding: 20px 32px;
+}ya se uso otro abajo(pa otro trabajo sirve*/
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+form {
+  max-width: 650px; /*Tamaño del ancho*/
+  margin: 40px auto;
+  padding: 32px;
+  background-color: #442d1c; /*color del fondo del formulario*/
+  border: 1px solid #683636; /*Color del borde del formulario*/
+  border-radius: 12px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+section h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-bottom: 2px solid #20150d; /*color del borde de boton(en este caso la opcion de las plataformas*/
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #947c76; /*color de los label(nombre de campo a rellenar/tildar/elegir*/
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #804e4e; /*color del borde los campo a rellenar con texto*/
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #442d1c;
+  background-color: #fafafa; /*color del fonde de campos a rellenar*/
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #b49fa1;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.15);
+}
+
+select {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.opcion-radio,
+.opcion-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #ffae7481; /*color del fondo del boton*/
+  color: #442d1c; /*color del texto que esta en el boton*/
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button[type="submit"]:hover {
+  background-color: #9c7f6a; /*color del boton cuando el raton pasa por encima*/
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.estiloHeader {
+  display: flex;
+  background-color: #442d1c; /*color del fondo de header*/
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.estiloImg {
+  width: auto;
+  height: 100px;
+  margin: 10px;
+  padding-top: 15px;
+}
+
+.estiloTitulo {
+  justify-content: space-around;
+  margin: 10px;
+  color: white;
+  font-style: italic;
+}
