@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <title>veterinaria</title>
+</head>
+<body>
+    <header>
+        <h1>SAVET</h1>
+        <p>Reservá el turno de tu mascota online</p>
+    </header>
+    
+    <main>
+        <form>
+            <section>
+                <h3>Datos</h3>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text", id="nombre", name="nombre", required>
+                
+                <label for="email">Email:</label>
+                <input type="email", id="email", name="email", required>
+
+                <label for="telefono">Telefono:</label>
+                <input type="text", id="telefono", name="telefono">
+            </section>
+
+            <section>
+                <h3>Datos de tu mascota</h3>
+
+                <label for="mascota">Nombre de la mascota:</label>
+                <input type="text", id="mascota", name="mascota", required>
+
+                <label for="especie">Especie:</label>
+                <select name="especie" id="especie", required>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="ave">Ave</option>
+                    <option value="conejo">Conejo</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="peso">Peso:</label>
+                <input type="number", id="peso", name="peso", min="0">
+            </section>
+
+            <section>
+                <h3>Motivo de la consulta</h3>
+
+                <div class="opcion-radio">
+                    <label for="control">Control de rutina</label>
+                    <input type="radio", id="control", name="motivo", value="control">
+
+                    <label for="vacuna">Vacuna</label>
+                    <input type="radio" id="vacuna", name="motivo", value="vacuna">
+
+                    <label for="enfermedad">Enfermedad o síntoma</label>
+                    <input type="radio" id="enfermedad", name="motivo", value="enfermedad">
+                </div>
+            </section>
+            <section>
+                <h3>Día preferido</h3>
+
+                <div class="opcion-checkbox">
+                    <label for="">Lunes</label>
+                    <input type="checkbox" id="lunes" name="dia_lunes" value="lunes">
+
+                    <label for="">Martes</label>
+                    <input type="checkbox" id="martes" name="dia_martes" value="martes">
+                    
+                    <label for="">Miercoles</label>
+                    <input type="checkbox" id="miercoles" name="dia_miercoles" value="miercoles">
+                    
+                    <label for="">Jueves</label>
+                    <input type="checkbox" id="jueves" name="dia_jueves" value="jueves">
+                    
+                    <label for="">Viernes</label>
+                    <input type="checkbox" id="viernes" name="dia_viernes" value="viernes">
+                    
+                    <label for="">Sabado</label>
+                    <input type="checkbox" id="sabado" name="dia_sabado" value="sabado">
+                    
+                    <label for="">Domingo</label>
+                    <input type="checkbox" id="domingo" name="dia_domingo" value="domingo">
+                </div>
+            </section>
+            <section>
+                <h3>Turno preferido:</h3>
+                <label for="turno">Elegí un horario</label>
+                <select name="turno" id="turno", required>
+                    <option value="mañana">Mañana (9 a 13hs)</option>
+                    <option value="tarde">Tarde (14 a 18hs)</option>
+                </select>
+            </section>
+            <section>
+                <h3>Información adicional</h3>
+                <label for="comentarios">¿Querés contarnos algo más sobre tu mascota?</label>
+                <textarea 
+                id="comentarios" 
+                name="comentarios" 
+                rows="4"
+                ></textarea>
+            </section>
+            <p id="mensaje"></p> <!--Nose pa que es-->
+            <button type="submit">Solicitar turno</button>
+        </form>
+
+    </main>
+    
+    <footer>
+        <p>Veterinaria Alba — Buenos Aires</p>
+    </footer>
+
+</body>
+</html>
