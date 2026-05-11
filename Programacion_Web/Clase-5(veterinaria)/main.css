@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgb(202, 202, 202); /*color del fondo de todo lo que esta en el cuerpo*/
+}
+
+header{
+    background-color: #4d804c;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    
+}
+header p{ /*Para que el subtitulo se vea menos prominente que el titulo*/
+    margin-top: 10px;
+    color: rgb(223, 255, 213);
+    /*font-style: oblique;
+    opacity: 0.9;*/
+}
+
+main{
+    padding: 30px;
+}
+
+form{
+    max-width: 620px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 0 2px #69ce6926;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+section h3{
+    border-bottom: 2px solid #4d804ca1;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #657e64a1;
+    border-radius: 8px;
+    background-color: #edfceca1;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border-color: #588157;
+    box-shadow: 0 0 5px #58815766;
+}
+
+textarea{
+    resize: vertical;
+}
+
+select{
+    cursor: pointer;
+}
+
+.opcion-radio,
+.opcion-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.opcion-radio label,
+.opcion-checkbox label{
+    cursor: pointer;
+}
+
+.opcion-radio input,
+.opcion-checkbox input{
+    width: auto;
+}
+
+button{
+    width: 100%;
+    padding: 14px;
+    background-color: #478547;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #44694b;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+input,
+select,
+textarea,
+button{
+    font-family: inherit;
+}
