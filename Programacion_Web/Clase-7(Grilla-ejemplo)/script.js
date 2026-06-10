@@ -14,6 +14,8 @@ const arregloObjetos = [{ nombre: "Federico" }, { nombre: "Juan" }];
 arregloObjetos.forEach((objeto) => {
   console.log(objeto.nombre);
 });
+//-----------------------------------------------------------
+
 
 const personajes = [
   { nombre: "Yang Gwam Sik", descripcion: "papá luchon" },
