@@ -2,7 +2,7 @@ const series = [
   {
     titulo: "When Life Give You Tangerines",
     imagen:
-      "Clase-7(Cine)/Imagenes/kdrama poster of _when life gives you tangerines_.jpeg",
+      "Clase-7(Cine)/Imagenes/WhenLifeGivesYouTangerines.jpeg",
     genero: "Melodrama",
     rating: 9.0,
     sinopsis:
@@ -10,7 +10,7 @@ const series = [
   },
   {
     titulo: "Ao Haru Ride",
-    imagen: "Clase-7(Cine)/Imagenes/Ao Haru Ride.jpeg",
+    imagen: "Clase-7(Cine)/Imagenes/AoHaruRide.jpeg",
     genero: "Shōjo",
     rating: 7.5,
     sinopsis:
@@ -43,6 +43,7 @@ function crearCard(serie) {
   return card;
 }
 
+
 function renderGrilla(lista) {
   const grilla = document.querySelector("#grilla");
   const contador = document.querySelector("#contador");
@@ -57,7 +58,8 @@ function renderGrilla(lista) {
   contador.textContent = lista.length + " series encontrados";
 }
 
-/*function buscar(lista, termino) {
+
+function buscar(lista, termino) {
   return lista.filter(function (serie) {
     return serie.titulo.toLowerCase().includes(termino.toLowerCase());
   });
@@ -81,8 +83,8 @@ function buscarYFiltrar() {
   renderGrilla(resultado);
 }
 
-document.querySelector("#busqueda").addEventListener("input", buscarYFiltrar);
-document.querySelector("#genero").addEventListener("change", buscarYFiltrar);
+//document.querySelector("#busqueda").addEventListener("input", buscarYFiltrar);
+//document.querySelector("#genero").addEventListener("change", buscarYFiltrar);
 
 renderGrilla(series);
-*/
+
